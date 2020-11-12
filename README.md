@@ -8,7 +8,7 @@
 
 ### Reshuffle Twitter Connector
 
-This package contains a [Resshufle](https://github.com/reshufflehq/reshuffle)
+This package contains a [Reshuffle](https://github.com/reshufflehq/reshuffle)
 connector for connecting to Twitter as a
 [Twitter Developer App](https://developer.twitter.com/en/docs/apps/overview).
 
