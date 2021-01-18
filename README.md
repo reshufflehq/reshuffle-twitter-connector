@@ -2,7 +2,7 @@
 
 [Code](https://github.com/reshufflehq/reshuffle-twitter-connector) |
 [npm](https://www.npmjs.com/package/reshuffle-twitter-connector) |
-[Code sample](https://github.com/reshufflehq/reshuffle-twitter-connector/examples)
+[Code sample](https://github.com/reshufflehq/reshuffle-twitter-connector/tree/master/examples)
 
 `npm install reshuffle-twitter-connector`
 
