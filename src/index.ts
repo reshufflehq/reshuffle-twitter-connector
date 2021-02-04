@@ -186,10 +186,11 @@ export class TwitterConnector extends CoreConnector {
         max = BigInt(res[res.length - 1].id_str) - BigInt(1)
       }
     }
-
     await this.store.update(cursorName, async (oldCursor) => {
       await loadTweetsFromCursor(oldCursor)
-      return tweets.length ? { lastSeen: tweets[0].id_str } : undefined
+      return tweets.length ?
+        { lastSeen: tweets[tweets.length - 1].id_str } :
+        undefined
     })
 
     return tweets
