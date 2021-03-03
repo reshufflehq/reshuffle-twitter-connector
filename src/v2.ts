@@ -16,7 +16,7 @@ export type TwitterConnectorV2Options =
 export type TwitterConnectorV2EventOptions = {
   endpoint: string;
   parameters?: RequestParameters;
-}
+};
 
 export type TwitterV2Stream = ReturnType<Twitter["stream"]>;
 
@@ -70,16 +70,20 @@ export class TwitterV2Connector extends BaseConnector<
     });
   }
 
-  public get(...args: Parameters<Twitter["get"]>) {
-    this.client.get(...args);
+  public get(...args: Parameters<Twitter["get"]>): ReturnType<Twitter["get"]> {
+    return this.client.get(...args);
   }
 
-  public post(...args: Parameters<Twitter["post"]>) {
-    this.client.post(...args);
+  public post(
+    ...args: Parameters<Twitter["post"]>
+  ): ReturnType<Twitter["post"]> {
+    return this.client.post(...args);
   }
 
-  public delete(...args: Parameters<Twitter["delete"]>) {
-    this.client.delete(...args);
+  public delete(
+    ...args: Parameters<Twitter["delete"]>
+  ): ReturnType<Twitter["delete"]> {
+    return this.client.delete(...args);
   }
 
   public sdk(): Twitter {
