@@ -210,3 +210,5 @@ export class TwitterConnector extends CoreConnector {
     return this.request('POST', path, qs, body)
   }
 }
+
+export * from './v2'
